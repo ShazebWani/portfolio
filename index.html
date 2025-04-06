@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -82,21 +86,21 @@
         </div>
       </div>
     </header>
-    <section class="home-hero">
-      <div class="home-hero__content">
+    <section class="home-hero" data-aos="fade-up">
+      <div class="home-hero__content" data-aos="fade-right">
         <h1 class="heading-primary">Hey, My name is John Doe</h1>
-        <div class="home-hero__info">
+        <div class="home-hero__info" data-aos="fade-left">
           <p class="text-primary">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
             tempora explicabo quae quod deserunt eius sapiente solutions for
             complex problems
           </p>
         </div>
-        <div class="home-hero__cta">
+        <div class="home-hero__cta" data-aos="zoom-in">
           <a href="./#projects" class="btn btn--bg">Projects</a>
         </div>
       </div>
-      <div class="home-hero__socials">
+      <div class="home-hero__socials" data-aos="fade-up">
         <div class="home-hero__social">
           <a href="#" class="home-hero__social-icon-link">
             <img
@@ -150,9 +154,9 @@
         <div class="mouse"></div>
       </div>
     </section>
-    <section id="about" class="about sec-pad">
+    <section id="about" class="about sec-pad" data-aos="fade-up">
       <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
+        <h2 class="heading heading-sec heading-sec__mb-med" data-aos="fade-right">
           <span class="heading-sec__main">About Me</span>
           <span class="heading-sec__sub">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
@@ -160,7 +164,7 @@
           </span>
         </h2>
         <div class="about__content">
-          <div class="about__content-main">
+          <div class="about__content-main" data-aos="fade-left">
             <h3 class="about__content-title">Get to know me!</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
@@ -185,7 +189,7 @@
               >Contact</a
             >
           </div>
-          <div class="about__content-skills">
+          <div class="about__content-skills" data-aos="fade-right">
             <h3 class="about__content-title">My Skills</h3>
             <div class="skills">
               <div class="skills__skill">HTML</div>
@@ -205,9 +209,9 @@
         </div>
       </div>
     </section>
-    <section id="projects" class="projects sec-pad">
+    <section id="projects" class="projects sec-pad" data-aos="fade-up">
       <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
+        <h2 class="heading heading-sec heading-sec__mb-bg" data-aos="fade-right">
           <span class="heading-sec__main">Projects</span>
           <span class="heading-sec__sub">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
@@ -216,7 +220,7 @@
         </h2>
 
         <div class="projects__content">
-          <div class="projects__row">
+          <div class="projects__row" data-aos="fade-up">
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/project-mockup-example.jpeg"
@@ -240,7 +244,7 @@
               >
             </div>
           </div>
-          <div class="projects__row">
+          <div class="projects__row" data-aos="fade-up" data-aos-delay="200">
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/project-mockup-example.jpeg"
@@ -264,7 +268,7 @@
               >
             </div>
           </div>
-          <div class="projects__row">
+          <div class="projects__row" data-aos="fade-up" data-aos-delay="400">
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/project-mockup-example.jpeg"
@@ -291,16 +295,16 @@
         </div>
       </div>
     </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
+    <section id="contact" class="contact sec-pad dynamicBg" data-aos="fade-up">
       <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
+        <h2 class="heading heading-sec heading-sec__mb-med" data-aos="fade-right">
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
             tempora explicabo quae quod deserunt eius sapiente
           </span>
         </h2>
-        <div class="contact__form-container">
+        <div class="contact__form-container" data-aos="fade-left">
           <form action="#" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
@@ -343,7 +347,7 @@
         </div>
       </div>
     </section>
-    <footer class="main-footer">
+    <footer class="main-footer" data-aos="fade-up">
       <div class="main-container">
         <div class="main-footer__upper">
           <div class="main-footer__row main-footer__row-1">
@@ -396,17 +400,13 @@
             </p>
           </div>
         </div>
-
-        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
-        <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
-            >Ram Maheshwari</a
-          >
-        </div>
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./index.js"></script>
   </body>
 </html>

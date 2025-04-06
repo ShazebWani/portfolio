@@ -68,11 +68,20 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
-    transition: color .3s;
+    transition: all 0.3s;
+    background: linear-gradient(90deg, $themeClrPrimary, #000, #848383);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     &:hover {
-      color: $themeClrPrimary;
+      color: #fff;
+      background: linear-gradient(90deg, $themeClrPrimary, $themeClrPrimary);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
     @include respond(tab-port) {
       padding: 3rem 1.8rem;
       font-size: 1.5rem;
